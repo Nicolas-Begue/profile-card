@@ -15,15 +15,15 @@ body {
 }
 #bodyBgTop,
 #bodyBgBottom {
-  position: absolute;
+  position: fixed;
 }
 #bodyBgTop {
-  left: -10%;
-  top: -50vh;
+  left: -20%;
+  top: -400px;
 }
 #bodyBgBottom {
-  right: -10%;
-  bottom: -50vh;
+  right: -20%;
+  bottom: -400px;
 }
 #card {
   z-index: 1;
@@ -83,4 +83,10 @@ ul li::first-line {
   line-height: 25px;
   font-size: 18px;
   font-weight: bold;
+}
+@media screen and (max-width: 1440px) {
+  body {
+    min-width: 375px;
+    min-height: 667px;
+  }
 }
